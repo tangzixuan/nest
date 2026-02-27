@@ -415,7 +415,7 @@ export class ServerRMQ extends Server<RmqEvents, RmqStatus> {
     }
   }
 
-  private initializeWildcardHandlersIfExist() {
+  protected initializeWildcardHandlersIfExist() {
     if (this.wildcardHandlers.size !== 0) {
       return;
     }
